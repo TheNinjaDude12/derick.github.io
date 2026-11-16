@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frederick Garcia Jr – Career e-Portfolio</title>
+<meta name="description" content="Computer Science student at De La Salle University and full-stack developer. Projects, resume, and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF2EC;--panel:#E1E8DF;--ink:#12241B;--mute:#52645A;--green:#0F5D3E;--gold:#E4B93C;--line:#B9C7BC;--on-green:#F4F8F2}
+@media(prefers-color-scheme:dark){:root{--bg:#0E1A14;--panel:#16271F;--ink:#E6EEE7;--mute:#9DB0A4;--green:#5CC393;--gold:#E4B93C;--line:#2B4034;--on-green:#0E1A14}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:var(--green);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.05;margin:0}
+.wrap{display:grid;grid-template-columns:230px minmax(0,1fr);gap:4rem;max-width:1080px;margin:0 auto;padding:0 1.5rem}
+nav{position:sticky;top:0;align-self:start;height:100vh;padding:3rem 0;display:flex;flex-direction:column;gap:.35rem}
+nav .me{font:800 1.3rem/1.1 "Bricolage Grotesque";margin-bottom:1.5rem}
+nav a{color:var(--mute);text-decoration:none;padding:.25rem 0 .25rem .9rem;border-left:3px solid var(--line);font-weight:500}
+nav a:hover,nav a.on{color:var(--ink);border-color:var(--gold)}
+main{padding:3rem 0 5rem;max-width:720px}
+section{padding:3.5rem 0 0}
+h2{font-size:2rem;margin-bottom:1.25rem}
+.hero{padding-top:0}
+.hero h1{font-size:clamp(3rem,9vw,5.6rem);font-weight:800;letter-spacing:-.03em}
+.hero h1 span{display:block;color:var(--green)}
+.hero p.lead{font-size:1.3rem;max-width:34ch;margin:1.5rem 0}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--green)}
+.btn.main{background:var(--green);color:var(--on-green)}
+.btn:hover{background:var(--gold);border-color:var(--gold);color:#12241B}
+.skills dl{margin:0;display:grid;grid-template-columns:8rem 1fr;gap:.6rem 1rem}
+.skills dt{font-weight:600}.skills dd{margin:0;color:var(--mute)}
+.proj{display:grid;grid-template-columns:9rem 1fr;gap:1.5rem;padding:1.75rem 0;border-top:1px solid var(--line)}
+.proj .meta{color:var(--mute);font-size:.95rem}
+.proj h3{font-size:1.45rem;margin-bottom:.5rem}
+.proj ul{padding-left:1.1rem;margin:.6rem 0}
+.proj figure{margin:1rem 0 0}
+.proj img{max-width:100%;border-radius:8px;border:1px solid var(--line)}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.7rem}
+.tags b{font-weight:500;font-size:.85rem;background:var(--panel);padding:.15rem .6rem;border-radius:99px}
+.edu{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1rem 0;border-top:1px solid var(--line)}
+.edu p{margin:.2rem 0;color:var(--mute)}
+.resume-frame{width:100%;height:70vh;border:1px solid var(--line);border-radius:8px;margin-top:1rem;background:var(--panel)}
+.note{background:var(--panel);padding:1rem 1.25rem;border-left:4px solid var(--gold);border-radius:4px}
+footer{color:var(--mute);font-size:.9rem;padding-top:3rem}
+@media(max-width:820px){
+ .wrap{display:block}
+ nav{position:static;height:auto;flex-direction:row;flex-wrap:wrap;gap:.25rem 1rem;padding:1.5rem 0 0}
+ nav .me{width:100%;margin-bottom:.5rem}
+ nav a{border:0;padding:.2rem 0}
+ .proj{grid-template-columns:1fr;gap:.5rem}
+ .skills dl{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections">
+ <div class="me">Frederick<br>Garcia Jr</div>
+ <a href="#intro">Intro</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#publication">Publication</a><a href="#resume">Resume</a><a href="#references">References</a><a href="#contact">Contact</a>
+</nav>
+
+<main>
+<section class="hero" id="intro">
+ <h1>Frederick Voltair <span>Garcia Jr</span></h1>
+ <p class="lead">Computer Science student and full-stack developer who builds web apps and data systems.</p>
+ <p>I&rsquo;m a third-year Computer Science student (Software Technology) at De La Salle University with a 3.6 GPA. I like turning messy requirements into working software: a scheduling app that posts to social platforms, a data warehouse for a year of NYC taxi trips, and a few games along the way. I&rsquo;m looking for an entry-level software development role or an internship where I can ship real features, work with a team, and learn fast.</p>
+ <div class="btns">
+  <a class="btn main" href="resume.pdf">Download resume</a>
+  <a class="btn" href="https://www.linkedin.com/in/frederick-voltair-jr-g-2899a6181/" target="_blank" rel="noopener">LinkedIn profile</a>
+  <a class="btn" href="mailto:frederick_garciajr@dlsu.edu.ph">Email me</a>
+ </div>
+</section>
+
+<section id="projects">
+ <h2>Academic work samples</h2>
+
+ <article class="proj">
+  <div class="meta">Group project<br>De La Salle University</div>
+  <div>
+   <h3>AgilaPost: social media scheduler</h3>
+   <p>A full-stack app for planning and scheduling posts across platforms.</p>
+   <ul>
+    <li>Built the calendar, scheduling, and category filter components for managing posts.</li>
+    <li>Implemented a TikTok OAuth 2.0 login flow and researched the Meta Graph API and LinkedIn API.</li>
+    <li>Worked with teammates through GitHub branches and deployed the backend on Render.</li>
+   </ul>
+   <div class="tags"><b>React</b><b>TypeScript</b><b>Node.js</b><b>Express</b><b>MongoDB</b></div>
+   <p><a href="#" target="_blank" rel="noopener">View code on GitHub</a></p><!-- TODO: replace # with your repo URL -->
+   <figure><img src="images/agilapost.png" alt="AgilaPost calendar view" onerror="this.parentElement.remove()"></figure>
+  </div>
+ </article>
+
+ <article class="proj">
+  <div class="meta">Database course<br>De La Salle University</div>
+  <div>
+   <h3>NYC taxi data warehouse</h3>
+   <p>A star-schema warehouse and analytics app for 2024 NYC green taxi trips.</p>
+   <ul>
+    <li>Designed the star schema in MySQL.</li>
+    <li>Wrote a Python ETL pipeline with SQLAlchemy that removes invalid records and duplicates, fills null values, and loads the dimension and fact tables.</li>
+    <li>Building an OLAP web app to analyze trips by time, location, and payment type.</li>
+   </ul>
+   <div class="tags"><b>MySQL</b><b>Python</b><b>SQLAlchemy</b><b>ETL</b><b>OLAP</b></div>
+   <p><a href="#" target="_blank" rel="noopener">View code on GitHub</a></p><!-- TODO: replace # -->
+   <figure><img src="images/taxi-warehouse.png" alt="Star schema diagram" onerror="this.parentElement.remove()"></figure>
+  </div>
+ </article>
+
+ <article class="proj">
+  <div class="meta">Group project<br>De La Salle University</div>
+  <div>
+   <h3>Game database management system</h3>
+   <p>A relational MySQL database for game data with create, view, update, and delete operations.</p>
+   <div class="tags"><b>MySQL</b><b>CRUD</b><b>Database design</b></div>
+   <figure><img src="images/game-db.png" alt="Game database screenshot" onerror="this.parentElement.remove()"></figure>
+  </div>
+ </article>
+
+ <article class="proj">
+  <div class="meta">Academic<br>De La Salle University</div>
+  <div>
+   <h3>Java GUI game</h3>
+   <p>An interactive desktop game that uses object-oriented design to separate game logic from interface components.</p>
+   <div class="tags"><b>Java</b><b>OOP</b><b>GUI</b></div>
+   <figure><img src="images/java-game.png" alt="Java game screenshot" onerror="this.parentElement.remove()"></figure>
+  </div>
+ </article>
+
+ <article class="proj">
+  <div class="meta">Academic<br>De La Salle University</div>
+  <div>
+   <h3>Web forum</h3>
+   <p>A forum where users create and view posts, built with plain HTML, CSS, and JavaScript.</p>
+   <div class="tags"><b>HTML</b><b>CSS</b><b>JavaScript</b></div>
+   <figure><img src="images/web-forum.png" alt="Web forum screenshot" onerror="this.parentElement.remove()"></figure>
+  </div>
+ </article>
+</section>
+
+<!-- WORK SAMPLES (optional): uncomment and fill in if you have part-time, volunteer, or org experience.
+<section id="work">
+ <h2>Work and volunteer samples</h2>
+ <article class="proj">
+  <div class="meta">Role<br>Organization, dates</div>
+  <div><h3>Title</h3><p>What you did and what changed because of it.</p>
+  <figure><img src="images/work1.jpg" alt="Describe the photo" onerror="this.parentElement.remove()"></figure></div>
+ </article>
+</section>
+-->
+
+<section id="skills" class="skills">
+ <h2>Skills</h2>
+ <dl>
+  <dt>Languages</dt><dd>Java, Python, JavaScript, TypeScript</dd>
+  <dt>Web</dt><dd>React, Node.js, Express, HTML, CSS</dd>
+  <dt>Databases</dt><dd>MySQL, MongoDB, relational design, data warehousing, ETL</dd>
+  <dt>Concepts</dt><dd>Object-oriented programming, teamwork, problem-solving, technical writing</dd>
+  <dt>Languages spoken</dt><dd>English, Filipino</dd>
+ </dl>
+</section>
+
+<section id="education">
+ <h2>Education</h2>
+ <div class="edu"><div><strong>BS Computer Science, Software Technology</strong><p>De La Salle University &middot; GPA 3.6/4.0</p><p>Database Management, Algorithms, Computer Networks, Computer Architecture, Human-Computer Interaction</p></div><div>2024&ndash;2028 (expected)</div></div>
+ <div class="edu"><div><strong>Senior High School Diploma</strong><p>De La Salle University &middot; Silver Medalist</p></div><div>2022&ndash;2024</div></div>
+</section>
+
+<section id="publication">
+ <h2>Publication</h2>
+ <p>I authored and published an AI research paper on Yoodli on ResearchGate.</p>
+ <p><a href="#" target="_blank" rel="noopener">Read the paper</a></p><!-- TODO: replace # with your ResearchGate link -->
+</section>
+
+<section id="resume">
+ <h2>Resume</h2>
+ <p><a class="btn main" href="resume.pdf" download>Download PDF</a></p>
+ <iframe class="resume-frame" src="resume.pdf" title="Resume preview"></iframe>
+</section>
+
+<section id="references">
+ <h2>References and testimonials</h2>
+ <p class="note">References and letters of recommendation are available on request. Email me and I&rsquo;ll connect you with them.</p>
+ <!-- Have a professor or teammate who agreed to be a reference? Add a block like this:
+ <blockquote>&ldquo;Short quote.&rdquo;<br>Name, Title, Organization</blockquote> -->
+</section>
+
+<section id="contact">
+ <h2>Contact</h2>
+ <p>Based in Pangasinan, Philippines. Open to internships and entry-level roles.</p>
+ <p><a href="mailto:frederick_garciajr@dlsu.edu.ph">frederick_garciajr@dlsu.edu.ph</a><br>
+ <a href="https://www.linkedin.com/in/frederick-voltair-jr-g-2899a6181/" target="_blank" rel="noopener">LinkedIn</a></p>
+</section>
+
+<footer>&copy; 2026 Frederick Voltair Garcia Jr</footer>
+</main>
+</div>
+<script>
+const links=[...document.querySelectorAll('nav a')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-30% 0px -60% 0px'});
+document.querySelectorAll('main section').forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
